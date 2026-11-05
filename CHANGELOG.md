@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.2 — 2026-11-05
+
+- Completed a **fictional provisional necessity review** for 93 Annex A control references, including 70 formerly pending entries and the two previously unassessed physical references.
+- Proposed 91 necessary controls and two conditional scope-based exclusions (A.7.6, A.8.30), both pending management validation.
+- Preserved 11 existing Gap and 10 Partial observations; did **not** invent implementation assurance for 70 otherwise unverified controls.
+- Added row-level scenario rationales, evidence requests, owners and 9 open follow-up workstreams.
+- Created a separate v0.2 SoA workbook and automated consistency tests without overwriting the v0.1 baseline.
+
+
 ## 0.1 — 2026-11-05
 
 - Started an independent **fictional ISO/IEC 27001:2022 ISMS governance and gap assessment**.

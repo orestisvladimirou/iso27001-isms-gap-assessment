@@ -38,3 +38,7 @@ A real Statement of Applicability must be based on risk treatment, justify selec
 This project paraphrases selected control **themes** without reproducing ISO copyrighted requirement text. It does not represent an official accreditation or an authorized ISO audit; the organization and findings are all invented. Obtain the licensed standard for a real conformity assessment.
 
 Official source: https://committee.iso.org/standard/27001
+
+## Phase 2 update (version 0.2)
+
+The original v0.1 register above is intentionally retained as a baseline. [Phase 2](../phase2/README.md) records a provisional applicability decision for each of the 93 control identifiers, including proposed exclusion justifications for A.7.6 and A.8.30. In that *separate* register, 91 controls are provisionally necessary but 70 of them lack operating evidence, and two exclusions require an owner-approved scope check. The v0.1 counts in this document remain historically accurate, not the newest selection status.

@@ -12,5 +12,11 @@ jobs:
           python-version: '3.12'
       - name: Validate source data
         run: python scripts/validate_project.py
+      - name: Validate Phase 2 control applicability
+        run: python scripts/validate_phase2.py
+      - name: Verify v0.2 companion workbook matches CSV
+        run: python scripts/validate_workbook.py
+      - name: Verify repository manifest hashes
+        run: python scripts/validate_manifest.py
       - name: Regression tests
         run: python -m unittest discover -s tests -v

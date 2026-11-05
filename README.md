@@ -1,6 +1,6 @@
 # ISO/IEC 27001:2022 — ISMS Governance & Gap Assessment
 
-**Independent cybersecurity/GRC portfolio project · Version 0.1 (foundation) · 5 November 2026**
+**Independent cybersecurity/GRC portfolio project · Version 0.2 (applicability review) · 5 November 2026**
 
 > **COMPLETELY FICTIONAL CASE STUDY.** Selene Payments Ltd, its infrastructure, employees, policies, documents, control checks, risk ratings and outcomes are synthetic. This repository is **not** an ISO certification, third-party audit, legal compliance opinion or evidence of professional employment.
 
@@ -10,7 +10,13 @@ A fictional EU payments technology business is preparing to formalize its **Info
 
 This project complements, but does not duplicate, a separate third-party supplier-risk case study. Here the assessment is about **the company's internal management system**.
 
-## Status and scope of first version
+## Phase 2 — Provisional control-selection review (v0.2)
+
+The [new Phase 2 review](phase2/README.md) documents individual **provisional necessity decisions for all 93 Annex A identifiers**, including 91 necessary safeguards and two **proposed exclusions awaiting validation**. The original 23 focused controls are preserved; across the reviewed register, 11 have existing Gap findings, 10 Partial findings, 70 have implementation **not verified**, and two are conditional exclusions. The distinction between choosing a control and demonstrating it operates is fundamental.
+
+See the [complete selection register](phase2/data/soa_applicability_review.csv), [evidence workstreams](phase2/data/control_follow_up_actions.csv) and [companion workbook](phase2/SoA_Review_v0.2.xlsx). **This is not a management-approved SoA or certification audit.**
+
+## Version 0.1 baseline (retained unchanged)
 
 | Area | v0.1 deliverable |
 | --- | --- |
@@ -25,9 +31,9 @@ This project complements, but does not duplicate, a separate third-party supplie
 | Executive report | Gap priorities and 30/60/90-day roadmap |
 | Automation | Standard-library Python validation and unit tests; Excel risk/SoA workbook |
 
-### What the SoA does **not** claim
+### What the original v0.1 SoA does **not** claim
 
-The ISO reference list is complete by **control ID**, but only 23 controls were chosen for focused gap review. The remaining 70 are explicitly awaiting evaluation. Consequently, **this is not a completed SoA or full ISO 27001 conformity assessment**. Every necessary-control selection and every eventual exclusion would need an approved, risk-based justification.
+The ISO reference list is complete by **control ID**, but only 23 controls were chosen for focused gap review. The remaining 70 are explicitly awaiting evaluation. The initial **v0.1** SoA was an incomplete baseline. The separate **v0.2** register now records provisional selection reasons for 93/93 identifiers; **70 necessary controls still lack implementation evidence** and two exclusions await independent scope confirmation. Neither an approved SoA nor conformity is being claimed.
 
 ## Start here
 
@@ -37,6 +43,8 @@ The ISO reference list is complete by **control ID**, but only 23 controls were 
 4. [Executive report and actions](docs/04-executive-report.md)
 5. [Remediation and governance roadmap](docs/05-roadmap.md)
 6. [Standards mapping and sources](docs/06-sources-and-limitations.md)
+7. [Phase 2 applicability decisions](phase2/docs/07-applicability-decisions.md)
+8. [Evidence plan and approval gates](phase2/docs/08-evidence-and-approval-plan.md)
 
 Source data are in [`data/`](data/), clearly marked synthetic artifacts in [`evidence/`](evidence/), templates in [`templates/`](templates/) and governance drafts in [`policies/`](policies/).
 
@@ -46,10 +54,11 @@ Requires Python 3.10 or later; **no external Python packages for validation**.
 
 ```sh
 python scripts/validate_project.py
+python scripts/validate_phase2.py
 python -m unittest discover -s tests -v
 ```
 
-The risk spreadsheet is **`ISMS_Gap_Assessment.xlsx`**. Source CSVs are authoritative for the project; updating a CSV does not automatically rewrite the workbook.
+The original risk workbook is **`ISMS_Gap_Assessment.xlsx`** (v0.1 baseline). The new **`phase2/SoA_Review_v0.2.xlsx`** covers the separate applicability review. Source CSVs are authoritative; neither workbook automatically syncs with CSV edits.
 
 ## Caveats
 
@@ -67,4 +76,4 @@ The risk spreadsheet is **`ISMS_Gap_Assessment.xlsx`**. Source CSVs are authorit
 - NIST CSF 2.0 Govern function (supplemental reference): https://www.nist.gov/cyberframework
 - ISO/IEC 27001 licensed standard is required for a real audit.
 
-**Development note:** v0.1 establishes a defendable, checkable case-study baseline. Next work should complete the remaining SoA justifications and strengthen internal audit, management review and evidence acceptance, rather than simply treating empty controls as passed.
+**Development note:** v0.2 addresses the remaining selection justifications, but does not claim implementation evidence for the 70 unverified controls. Next work should model a genuine-style **fictional internal audit**, corrective actions and management review with strict evidence limits. Keep private while developing.

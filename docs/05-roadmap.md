@@ -31,3 +31,7 @@ A true ISMS may require considerably longer, extra skills and external legal or 
 **Phase 3:** Conduct a mock internal audit against Clause 4–10 evidence, write simulated nonconformities with root cause/corrective actions, and perform a management-review exercise. Contrast findings before and after fictional remediation evidence.
 
 The baseline remains immutable for auditability; new evidence should be recorded in versioned follow-up data rather than silently overwriting original judgments.
+
+## Progress note — version 0.2 (simulated)
+
+The 93-control **selection review** has been drafted in `phase2/`, including 91 provisional necessary controls, 2 proposed conditional exclusions and 9 evidence follow-up workstreams. This completes the drafting of applicability justifications but **not** the 70 remaining implementation tests or the official approval of the SoA. The roadmap remains proposed, not signed or executed.
