@@ -1,7 +1,0 @@
-proposal_id,input_id,subject,proposed_management_direction,responsible_role,requested_date,related_capa_ids,status,authorization
-MR-301,MRI-302,Priority treatment oversight,Prioritize privileged access and remediation of overdue critical exposures; report progress monthly,Managing Director,2026-12-18,CA-304;CA-305,PROPOSED_ONLY,NONE
-MR-302,MRI-305,SoA selection confirmation,Confirm ISMS boundaries and validate both proposed control exclusions before authorization,ISMS Owner,2027-01-08,CA-303,PROPOSED_ONLY,NONE
-MR-303,MRI-304,ISMS performance dashboard,Approve measurable objectives for logging awareness and recovery with accountable monthly review,Information Security Manager,2027-01-08,CA-306;CA-308;CA-307,PROPOSED_ONLY,NONE
-MR-304,MRI-302,Audit and corrective-action governance,Assign impartial audit reviewer and require independently verified closure of all audit findings,Managing Director,2026-12-22,CA-301;CA-302,PROPOSED_ONLY,NONE
-MR-305,MRI-301,Context and climate relevance,Examine climate-related context relevance and interested-party needs without assuming relevance or nonrelevance,ISMS Owner,2027-01-15,CA-303,PROPOSED_ONLY,NONE
-MR-306,MRI-306,Resourcing and review frequency,Assess capacity for corrective action owners and schedule the next fictional review once evidence exists,Managing Director,2027-01-22,CA-301;CA-307,PROPOSED_ONLY,NONE
