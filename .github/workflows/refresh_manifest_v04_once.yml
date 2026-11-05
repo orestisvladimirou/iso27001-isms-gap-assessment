@@ -1,0 +1,42 @@
+name: Regenerate v0.4 ISMS portfolio manifest once
+
+on:
+  push:
+    paths:
+      - ".github/workflows/refresh_manifest_v04_once.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Configure Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Remove helper and rebuild checked-file manifest
+        run: |
+          git rm .github/workflows/refresh_manifest_v04_once.yml
+          python scripts/regenerate_manifest.py
+      - name: Check all historical assessments and portfolio QA
+        run: |
+          python scripts/validate_project.py
+          python scripts/validate_phase2.py
+          python scripts/validate_phase3.py
+          python scripts/validate_portfolio.py
+          python scripts/validate_workbook.py
+          python scripts/validate_manifest.py
+          python -m unittest discover -s tests -v
+      - name: Save validated v0.4 manifest
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Finalize verified v0.4 portfolio source manifest"
+          git push origin HEAD:main
