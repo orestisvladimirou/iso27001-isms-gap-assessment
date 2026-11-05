@@ -35,3 +35,7 @@ The baseline remains immutable for auditability; new evidence should be recorded
 ## Progress note — version 0.2 (simulated)
 
 The 93-control **selection review** has been drafted in `phase2/`, including 91 provisional necessary controls, 2 proposed conditional exclusions and 9 evidence follow-up workstreams. This completes the drafting of applicability justifications but **not** the 70 remaining implementation tests or the official approval of the SoA. The roadmap remains proposed, not signed or executed.
+
+## Progress note — version 0.3 (simulated)
+
+The desk-based, clearly fictional audit rehearsal is recorded in [Phase 3](../phase3/README.md), with ten sampled checks, nine indicative findings, nine open CAPAs and seven **unapproved role-play** management proposals. A modeled privileged-access check informs one hypothetical risk revision; no formal audit, risk acceptance, SoA authorization, or management review has occurred. The older Phase 2/3 sections above are the historical v0.1 plan, not outstanding instructions.

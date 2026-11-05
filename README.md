@@ -1,6 +1,6 @@
 # ISO/IEC 27001:2022 — ISMS Governance & Gap Assessment
 
-**Independent cybersecurity/GRC portfolio project · Version 0.2 (applicability review) · 5 November 2026**
+**Independent cybersecurity/GRC portfolio project · Version 0.3 (fictional audit and management review) · 5 November 2026**
 
 > **COMPLETELY FICTIONAL CASE STUDY.** Selene Payments Ltd, its infrastructure, employees, policies, documents, control checks, risk ratings and outcomes are synthetic. This repository is **not** an ISO certification, third-party audit, legal compliance opinion or evidence of professional employment.
 
@@ -15,6 +15,14 @@ This project complements, but does not duplicate, a separate third-party supplie
 The [new Phase 2 review](phase2/README.md) documents individual **provisional necessity decisions for all 93 Annex A identifiers**, including 91 necessary safeguards and two **proposed exclusions awaiting validation**. The original 23 focused controls are preserved; across the reviewed register, 11 have existing Gap findings, 10 Partial findings, 70 have implementation **not verified**, and two are conditional exclusions. The distinction between choosing a control and demonstrating it operates is fundamental.
 
 See the [complete selection register](phase2/data/soa_applicability_review.csv), [evidence workstreams](phase2/data/control_follow_up_actions.csv) and [companion workbook](phase2/SoA_Review_v0.2.xlsx). **This is not a management-approved SoA or certification audit.**
+
+## Phase 3 — Internal audit and management review rehearsal (v0.3)
+
+The [Phase 3 dossier](phase3/README.md) contains **ten synthetic audit samples**, **nine indicative audit-style findings** (six Major-style and three Minor-style as *training priorities*, not formal auditor grades), nine corrective-action cases, two explicitly fictional follow-up samples, six KPI measures and seven **unsigned role-play management directions**.
+
+In the made-up follow-up, scoped 7/7 privileged human MFA evidence allows a **provisional** change of ISMS-R01 from 20 Critical to **10 High**. Training attendance improves from 16/30 to 30/30, but without demonstrated learning, ISMS-R09 remains **9 Medium**. The other risks do not change, leaving **one Critical, seven High, two Medium**. **No finding is formally closed; no manager has approved risk treatment or the provisional SoA.**
+
+See the [audit sampling method](phase3/docs/09-internal-audit-method.md), [management review rehearsal](phase3/docs/10-management-review.md), [corrective-action/effectiveness analysis](phase3/docs/11-effectiveness-review.md) and [executive closeout](phase3/docs/12-executive-closeout.md). Original v0.1 and v0.2 source registers and their two workbooks are retained. This is **not a performed independent internal audit or an ISO certification assessment**.
 
 ## Version 0.1 baseline (retained unchanged)
 
@@ -45,6 +53,7 @@ The ISO reference list is complete by **control ID**, but only 23 controls were 
 6. [Standards mapping and sources](docs/06-sources-and-limitations.md)
 7. [Phase 2 applicability decisions](phase2/docs/07-applicability-decisions.md)
 8. [Evidence plan and approval gates](phase2/docs/08-evidence-and-approval-plan.md)
+9. [Phase 3 audit and management review exercise](phase3/README.md)
 
 Source data are in [`data/`](data/), clearly marked synthetic artifacts in [`evidence/`](evidence/), templates in [`templates/`](templates/) and governance drafts in [`policies/`](policies/).
 
@@ -55,6 +64,9 @@ Requires Python 3.10 or later; **no external Python packages for validation**.
 ```sh
 python scripts/validate_project.py
 python scripts/validate_phase2.py
+python scripts/validate_phase3.py
+python scripts/validate_workbook.py
+python scripts/validate_manifest.py
 python -m unittest discover -s tests -v
 ```
 
@@ -76,4 +88,4 @@ The original risk workbook is **`ISMS_Gap_Assessment.xlsx`** (v0.1 baseline). Th
 - NIST CSF 2.0 Govern function (supplemental reference): https://www.nist.gov/cyberframework
 - ISO/IEC 27001 licensed standard is required for a real audit.
 
-**Development note:** v0.2 addresses the remaining selection justifications, but does not claim implementation evidence for the 70 unverified controls. Next work should model a genuine-style **fictional internal audit**, corrective actions and management review with strict evidence limits. Keep private while developing.
+**Development note:** v0.3 adds the fictional internal audit and management review exercise with evidence limits and no fabricated approvals. Next work is a final integrated quality review, including a decision dashboard and traceability audit. Keep private while developing.
