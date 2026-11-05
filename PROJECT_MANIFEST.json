@@ -1,12 +1,12 @@
 {
   "project": "ISO27001-ISMS-Gap-Assessment",
-  "version": "0.3",
+  "version": "0.4",
   "purpose": "Fictional non-certification portfolio exercise",
   "files": [
     {
       "path": ".github/workflows/validate.yml",
-      "sha256": "ed6c2a2d6a7524e35a717ad163c4def0605a7f602e53bd6f3397c02a298c9e6c",
-      "size": 837
+      "sha256": "309bedb04bb66188a5fff69e8fb9089bea5ddc55a0ed39e3d12547a5a38aa484",
+      "size": 956
     },
     {
       "path": ".gitignore",
@@ -15,8 +15,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "011f0ff6d4b40d76f60a75c7993828ae8fe2537349592d4dd169fcbf34bd12e8",
-      "size": 2250
+      "sha256": "16942cd28f4f5442aad3cb93a749300f02d32d56774b8e1ef54b88be9e392765",
+      "size": 3079
     },
     {
       "path": "ISMS_Gap_Assessment.xlsx",
@@ -25,8 +25,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "c6470659edb2d5d7250878fc38ff429e3663b14fa81f2eaedb4f344c71432665",
-      "size": 7739
+      "sha256": "f1d8047539323719606880ed8f5de282d75eb1145616ae27d6f038df9cfea6f2",
+      "size": 8752
     },
     {
       "path": "data/asset_inventory.csv",
@@ -75,13 +75,13 @@
     },
     {
       "path": "docs/04-executive-report.md",
-      "sha256": "a9aac7307c8d6374c3acab9497fff69349c38affeca2bf6328f4e12b0284e61d",
-      "size": 3167
+      "sha256": "4c406c7723de020cb0fcb246da71d1e2f7fd7f6fd19c9bd7e1f973549266f161",
+      "size": 3467
     },
     {
       "path": "docs/05-roadmap.md",
-      "sha256": "8b9cc4ebab3be0ac3e43b9eb2d0abd15874b3ff964d9c0089f1ad79ac68731ce",
-      "size": 3971
+      "sha256": "023319ae04e9b493b698be4c7bcf7d355023fd10432190f7556b5e86da3d3a20",
+      "size": 4449
     },
     {
       "path": "docs/06-sources-and-limitations.md",
@@ -210,8 +210,8 @@
     },
     {
       "path": "phase3/data/management_review_inputs.csv",
-      "sha256": "c3411e4e941a0f24a7ef766e2509cce5737e4f075917f9f1ec162cef65f38ab3",
-      "size": 2112
+      "sha256": "62745f4f41da49079e8e41e664cec5ffce790c11777442ffcf4b76b9fec231ae",
+      "size": 2251
     },
     {
       "path": "phase3/data/risk_follow_up.csv",
@@ -235,8 +235,8 @@
     },
     {
       "path": "phase3/docs/12-executive-closeout.md",
-      "sha256": "349ee4b52982952468951282db18d5173d9c656bdf85944382fb92517f56e94b",
-      "size": 2846
+      "sha256": "7b63185152c9751f4e80237ddbd4aeae2c8feb243a413bcc90d4b6b51e400bc8",
+      "size": 2947
     },
     {
       "path": "phase3/evidence/P3-E01-privileged-mfa-followup.md",
@@ -247,6 +247,36 @@
       "path": "phase3/evidence/P3-E02-awareness-followup.md",
       "sha256": "c488fa86c4aa7d364aaf2c798f208f6357723e90c633d212b1e3ce80a04f0767",
       "size": 628
+    },
+    {
+      "path": "phase4/README.md",
+      "sha256": "9eeca27e196a51fc9b08833a040598ed67e7082720b648e615db913c4b20839b",
+      "size": 1529
+    },
+    {
+      "path": "phase4/dashboard.md",
+      "sha256": "28d4de0e35d4e0f70d2e55092cd4df27efcca20857cdac1c9c2dd98441babaf0",
+      "size": 7464
+    },
+    {
+      "path": "phase4/data/audit_action_crosswalk.csv",
+      "sha256": "27199a2a5ac7a935e2397032f252ab688d96cd876f85ac1fdf3dc453dde70efd",
+      "size": 1120
+    },
+    {
+      "path": "phase4/data/dashboard_indicators.csv",
+      "sha256": "ad12baa242707492891218a054df3efb5d6c46954fe336f865f7168c8dc7af69",
+      "size": 2183
+    },
+    {
+      "path": "phase4/data/risk_evolution.csv",
+      "sha256": "a6363017cc5ded32e9064dc7c60fd7e6446d3cb5a2563820afec6fc674b053d4",
+      "size": 1126
+    },
+    {
+      "path": "phase4/docs/final-quality-review.md",
+      "sha256": "72ab21c22eb6452ec21d8d5b38e5599c78bef9f5ef5300a835d8df518a37f1ae",
+      "size": 3945
     },
     {
       "path": "policies/POL-001-information-security-policy-DRAFT.md",
@@ -260,12 +290,12 @@
     },
     {
       "path": "scripts/regenerate_manifest.py",
-      "sha256": "b01d752846ff26093a896b1ff6580c766b148694f008681a5be1bc48fd593227",
+      "sha256": "e9e6d5bc74dba72c5fe46e596565990734042fa5f6b3ba4a04f070446b50f954",
       "size": 835
     },
     {
       "path": "scripts/validate_manifest.py",
-      "sha256": "10b295f64c9a71d28facd0b2ca7ec55a151fef0b01a4dbe8d9ad4d0dddacf152",
+      "sha256": "548d449a652258c45eabfd77efbacd2786a2730bf2d459f3735818049bf49454",
       "size": 1161
     },
     {
@@ -277,6 +307,11 @@
       "path": "scripts/validate_phase3.py",
       "sha256": "5f9eb9e23063d779296bb849eef3125fdfef28755bab0555c5e2f5cbe1e4b2ad",
       "size": 7860
+    },
+    {
+      "path": "scripts/validate_portfolio.py",
+      "sha256": "8a3878d04624adfcba03f9ebb8dbee03a352d38488e3d111ef45b7fcce6b2cf5",
+      "size": 7214
     },
     {
       "path": "scripts/validate_project.py",
@@ -322,6 +357,11 @@
       "path": "tests/test_phase3.py",
       "sha256": "6919b17ac8d130ea8a9f81a9a71af531ef63d1a85158cb5cf09479cb43fc8865",
       "size": 1856
+    },
+    {
+      "path": "tests/test_portfolio.py",
+      "sha256": "fbe4f36bff326060dae564558f14b943d670c3e7e6e71ada12fd1570cc2fa91e",
+      "size": 1274
     },
     {
       "path": "tests/test_soa_phase2.py",
