@@ -10,6 +10,6 @@ The internal audit model is deliberately **sample-based** and is not a certifica
 - [Management review report](docs/10-management-review.md)
 - [Correction and evidence follow-up](docs/11-effectiveness-review.md)
 - [Audit samples](data/audit_samples.csv), [findings](data/audit_findings.csv), [corrective actions](data/corrective_actions.csv)
-- [Management actions](data/management_decisions.csv), [risk trend](data/risk_follow_up.csv), and [performance indicators](data/kpi_snapshot.csv)
+- [Management review inputs](data/management_review_inputs.csv), [proposed management actions](data/management_decisions.csv), [risk trend](data/risk_follow_up.csv), and [performance indicators](data/kpi_snapshot.csv)
 
 Run `python scripts/validate_phase3.py` and `python -m unittest discover -s tests -v` after downloading the full repository.
