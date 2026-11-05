@@ -1,0 +1,7 @@
+kpi_id,measure,baseline_numerator,followup_numerator,denominator,target,source_evidence,interpretation
+KPI-301,Privileged human MFA coverage,4,7,7,7 of 7,EV-002;P3-E01,Simulation shows improved enforcement; continuing review missing
+KPI-302,Staff awareness attendance,16,30,30,30 of 30 plus comprehension test,EV-009;P3-E02,Attendance completion alone does not establish effectiveness
+KPI-303,Priority log sources connected,5,5,9,9 of 9,EV-005,Four source classes remain without evidenced ingestion
+KPI-304,Overdue critical vulnerability items,6,6,0,0 without approved exceptions,EV-004,Inventory baseline scenario remains unchanged
+KPI-305,Complete critical workload restore exercises,0,0,1,1 witnessed exercise,EV-006,No completed exercise evidenced
+KPI-306,Approved internal audit programs,0,0,1,1 signed program,EV-012,Mock audit is not an approved independent audit program

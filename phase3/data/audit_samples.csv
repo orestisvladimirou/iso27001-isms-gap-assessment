@@ -1,0 +1,11 @@
+sample_id,audit_id,criterion,sampling_scope,source_ref,evidence_observation,result,finding_id
+S-301,AUD-301,5.2;7.5,Policy approval and document control,EV-001,Fictional security policy is a draft without management approval or controlled effective date,INDICATIVE FINDING,F-301
+S-302,AUD-301,9.2,Audit program and impartiality planning,EV-012,No approved internal audit program or demonstrated independent audit record,INDICATIVE FINDING,F-302
+S-303,AUD-301,A.8.2,Seven privileged human identities,EV-002,Three of seven in-scope privileged accounts are not subject to enforced MFA in baseline,INDICATIVE FINDING,F-303
+S-304,AUD-301,A.8.8,Critical vulnerability remediation queue,EV-004,Six critical vulnerabilities exceed scenario remediation target with no signed exception,INDICATIVE FINDING,F-304
+S-305,AUD-301,A.8.13;A.5.30,Core payment API and backup restoration,EV-006,No completed workload-specific recovery exercise report,INDICATIVE FINDING,F-305
+S-306,AUD-301,9.3,ISMS management effectiveness review,MISSING,No documented management review or tracked review output,INDICATIVE FINDING,F-306
+S-307,AUD-301,6.1.3,Provisional necessity and exclusion review,phase2/data/soa_applicability_review.csv,Two proposed exclusions lack scope validation and approval; 70 necessary controls not verified,INDICATIVE FINDING,F-307
+S-308,AUD-301,7.3;A.6.3,Thirty fictional staff training attendance,EV-009,Only 16 of 30 staff recorded attendance; learning effectiveness untested,INDICATIVE FINDING,F-308
+S-309,AUD-301,9.1;A.8.15,Nine priority log-source classes,EV-005,Only five of nine priority log feeds represented; alert effectiveness not demonstrated,INDICATIVE FINDING,F-309
+S-310,AUD-301,A.8.24,Fifteen known modeled employee laptops,EV-007,Synthetic MDM sample claims 15/15 encrypted; limited to known laptop population,SCOPED POSITIVE OBSERVATION,

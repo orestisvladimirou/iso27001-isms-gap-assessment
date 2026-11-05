@@ -1,0 +1,3 @@
+review_id,finding_id,capa_id,new_evidence_id,review_date,sample_result,effectiveness_assessment,finding_disposition,independent_signoff
+REV-301,F-303,CAPA-303,P3-E01,2026-12-18,7/7 modeled privileged human MFA enabled; emergency identities sampled and no bypass exceptions recorded,SIMULATED TECHNICAL CONTROL SUPPORTED; monitoring and independent closure needed,OPEN - TECHNICAL PROGRESS,NOT OBTAINED
+REV-302,F-308,CAPA-308,P3-E02,2026-12-18,"30/30 synthetic attendance recorded, but no behavioral phishing/reporting assessment",ATTENDANCE ONLY; EFFECTIVENESS NOT VERIFIED,OPEN - PARTIAL PROGRESS,NOT OBTAINED

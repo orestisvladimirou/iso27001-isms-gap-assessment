@@ -1,0 +1,3 @@
+evidence_id,finding_id,source_file,scenario_date,synthetic_observation,confidence,remaining_limit
+P3-E01,F-303,phase3/evidence/P3-E01-privileged-mfa-followup.md,2026-12-18,Seven of seven hypothetical privileged humans have enforced phishing-resistant MFA; test challenge sampled,Moderate-in-simulation,Occurred after original proposed due date; no real independent check; technical sample does not formally close finding
+P3-E02,F-308,phase3/evidence/P3-E02-awareness-followup.md,2026-12-18,Thirty of thirty fictional workers attended training after make-up sessions,Low-for-effectiveness,Attendance is not evidence phishing reporting behavior improved

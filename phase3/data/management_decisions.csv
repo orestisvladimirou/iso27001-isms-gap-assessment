@@ -1,0 +1,8 @@
+decision_id,scenario_meeting_date,agenda_topic,inputs_reviewed,simulated_direction,owner_role,followup_due,decision_status,no_real_approval
+MR-301,2026-12-20,ISMS sponsorship and independence,F-301;F-302;F-306,Propose funded ISMS sponsor and impartial audit cycle; no authorization claimed,Managing Director,2027-01-15,ROLE-PLAY PROPOSAL,Yes
+MR-302,2026-12-20,MFA corrective action after late sample,F-303;REV-301;ISMS-R01,Acknowledge fictional technical progress but require independent closure and ongoing monitoring,IT Security Manager,2027-01-05,ROLE-PLAY PROPOSAL,Yes
+MR-303,2026-12-20,Critical vulnerability and recovery backlog,F-304;F-305;ISMS-R03;ISMS-R05,Recommend urgent backlog triage and complete workload recovery exercise; no risk accepted,Engineering Lead,2027-01-10,ROLE-PLAY PROPOSAL,Yes
+MR-304,2026-12-20,Training performance and effectiveness,F-308;REV-302,Require phishing/reporting simulation before training corrective action can close,HR and Security,2027-01-12,ROLE-PLAY PROPOSAL,Yes
+MR-305,2026-12-20,SoA necessity approvals,F-307;A.7.6;A.8.30,Defer signing provisional SoA pending facilities and contractor development review,ISMS Lead,2027-01-15,ROLE-PLAY PROPOSAL,Yes
+MR-306,2026-12-20,Monitoring and ISMS objectives,F-309;KPI-303;KPI-304;KPI-305,Propose monthly indicators and protected budget; demand missing log feeds and evidence,Security Operations Lead,2027-01-15,ROLE-PLAY PROPOSAL,Yes
+MR-307,2026-12-20,Context and climate-related changes,4.1;ISO27001-Amd1-2024,Propose assessment of climate-related business/technology concerns and relevant interested-party expectations,ISMS Lead,2027-01-20,ROLE-PLAY PROPOSAL,Yes

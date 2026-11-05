@@ -1,0 +1,11 @@
+risk_id,baseline_likelihood,baseline_impact,baseline_score,followup_likelihood,followup_impact,followup_score,followup_band,new_evidence_ids,scoring_note,approval_status
+ISMS-R01,4,5,20,2,5,10,High,P3-E01,Synthetic MFA 7/7 reduces takeover likelihood; financial impact unchanged; no real verification,NOT APPROVED - SIMULATED
+ISMS-R02,4,4,16,4,4,16,High,,Ownership/classification gap unresolved,NOT APPROVED - SIMULATED
+ISMS-R03,4,4,16,4,4,16,High,,Six overdue critical vulnerabilities remain unresolved,NOT APPROVED - SIMULATED
+ISMS-R04,3,4,12,3,4,12,High,,Priority log source coverage still five of nine,NOT APPROVED - SIMULATED
+ISMS-R05,3,5,15,3,5,15,High,,No complete recovery demonstration,NOT APPROVED - SIMULATED
+ISMS-R06,3,4,12,3,4,12,High,,Unapproved incident playbook remains untested,NOT APPROVED - SIMULATED
+ISMS-R07,2,3,6,2,3,6,Medium,,Scoped baseline laptop encryption evidence unchanged,NOT APPROVED - SIMULATED
+ISMS-R08,4,4,16,4,4,16,High,,Release security review controls still unverified,NOT APPROVED - SIMULATED
+ISMS-R09,3,3,9,3,3,9,Medium,P3-E02,Synthetic attendance improves to 30/30 but learning outcomes untested; no reduction,NOT APPROVED - SIMULATED
+ISMS-R10,4,5,20,4,5,20,Critical,,Cloud drift and misconfiguration assurance still insufficient,NOT APPROVED - SIMULATED
