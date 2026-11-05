@@ -21,7 +21,7 @@ class AuditRehearsalTests(unittest.TestCase):
         actions = p3_load("corrective_actions.csv")
         self.assertEqual(len(findings), 9)
         self.assertTrue(all("CLOSED" not in f["status"] for f in findings))
-        self.assertTrue(all("CLOSED" not in a["followup_state"] for a in actions))
+        self.assertTrue(all(a["followup_state"] in ("OPEN", "EVIDENCE_RECEIVED_NOT_CLOSED", "ATTENDANCE_ONLY_NOT_CLOSED") for a in actions))
         self.assertTrue(all(r["independent_signoff"] == "NOT OBTAINED"
                             for r in p3_load("effectiveness_reviews.csv")))
 
