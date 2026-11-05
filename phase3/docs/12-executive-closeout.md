@@ -29,4 +29,4 @@ The simulated ISO/IEC 27001 ISMS remains **not demonstrated as operating effecti
 
 It demonstrates the *documentation logic* of scoping, evidence sampling, finding cause, corrective action, management review and status tracking. The evidence is invented and the reported dates describe hypothetical scenario events only. No actual employee, payment system, real auditor, business decision, ISO certification or legal assessment is represented.
 
-Next improvement for the portfolio: a final integrated dashboard/management report and review of internal links, assumptions and traceability before public release. Retain all historical phases and avoid presenting a filled SoA as demonstrated control effectiveness.
+The later [Phase 4 integrated dashboard](../../phase4/dashboard.md) and [quality review](../../phase4/docs/final-quality-review.md) now consolidate the data and traceability checks. This Phase 3 report remains a historical fictional management summary, not a final approval. Retain all original phases and do not present the SoA as evidence of control implementation.

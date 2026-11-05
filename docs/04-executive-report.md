@@ -1,4 +1,6 @@
-# 04 — Fictional executive ISMS gap report
+# 04 — Fictional executive ISMS gap report (historical v0.1 baseline)
+
+**Version note:** This document preserves the original 5 November 2026 assessment. It is **not** the latest fictional state. See the [integrated Phase 4 dashboard](../phase4/dashboard.md) for the v0.3 follow-up scores, 93-control provisional review and audit/CAPA status.
 
 **Company:** Selene Payments Ltd (**fictional**)  
 **Assessment date:** 2026-11-05  

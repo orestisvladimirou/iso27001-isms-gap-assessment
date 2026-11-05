@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.4 — 2026-11-05
+
+- Added integrated GitHub-readable dashboard with all ten baseline-to-follow-up risks, SoA selection and assurance counts, audit/CAPA crosswalk, KPIs and management-approval status.
+- Corrected management-review input references left from a retired audit draft (nine final findings and CAPAs, not eight).
+- Added source-linked dashboard CSVs, independent phase-four consistency tests and local Markdown link scanning.
+- Clarified that early executive reports and spreadsheets are versioned historical snapshots, not the latest governance state.
+- Final portfolio review retains all evidence gaps, open corrective actions and absent authorizations without claiming ISO conformity or certification.
+- Regenerated versioned integrity manifest and wired Phase 4 into GitHub Actions; repository stays private.
+
 ## 0.3 — 2026-11-05
 
 - Added ten deliberately sampled fictional internal audit checks and nine **indicative** findings: six Major-style and three Minor-style, without claiming formal nonconformity.

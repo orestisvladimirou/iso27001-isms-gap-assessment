@@ -39,3 +39,7 @@ The 93-control **selection review** has been drafted in `phase2/`, including 91 
 ## Progress note — version 0.3 (simulated)
 
 The desk-based, clearly fictional audit rehearsal is recorded in [Phase 3](../phase3/README.md), with ten sampled checks, nine indicative findings, nine open CAPAs and seven **unapproved role-play** management proposals. A modeled privileged-access check informs one hypothetical risk revision; no formal audit, risk acceptance, SoA authorization, or management review has occurred. The older Phase 2/3 sections above are the historical v0.1 plan, not outstanding instructions.
+
+## Progress note — version 0.4 (integrated portfolio review)
+
+The [final integrated dashboard](../phase4/dashboard.md) and [source-based quality review](../phase4/docs/final-quality-review.md) consolidate the historical and fictional follow-up stages. The proposed 30/60/90-day targets above remain *scenario plans*, not completed organizational work. The ISO conformity, approved SoA, independent audit and corrective-action effectiveness gaps remain explicitly unresolved.

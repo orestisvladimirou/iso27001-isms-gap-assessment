@@ -21,10 +21,10 @@ def inventory():
 
 def validate_manifest():
     manifest=json.loads((ROOT/'PROJECT_MANIFEST.json').read_text(encoding='utf-8'))
-    assert manifest['version']=='0.3'
+    assert manifest['version']=='0.4'
     actual=inventory()
     listed={x['path']:{'sha256':x['sha256'],'size':x['size']} for x in manifest['files']}
     assert actual==listed, 'Manifest differs from current source; regenerate after controlled changes'
-    print(f'PASS manifest: {len(actual)} source and workbook files match v0.3 checksums.')
+    print(f'PASS manifest: {len(actual)} source and workbook files match v0.4 checksums.')
 
 if __name__=='__main__':validate_manifest()

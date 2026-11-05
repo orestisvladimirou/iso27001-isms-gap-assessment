@@ -17,7 +17,7 @@
 | **Corrective actions formally closed** | No completed audit process | **0 / 9** | Evidence progression is not sign-off |
 | **Actual management authorizations** | None | **0 / 7** | Seven role-play proposals only |
 
-<text>Risk-distribution chart (ten modeled risk scenarios):</text>
+Risk distribution across the ten fictional residual-risk scenarios:
 
 ```mermaid
 pie showData

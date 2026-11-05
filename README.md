@@ -1,6 +1,6 @@
 # ISO/IEC 27001:2022 — ISMS Governance & Gap Assessment
 
-**Independent cybersecurity/GRC portfolio project · Version 0.3 (fictional audit and management review) · 5 November 2026**
+**Independent cybersecurity/GRC portfolio project · Version 0.4 (integrated portfolio dashboard and quality review) · 5 November 2026**
 
 > **COMPLETELY FICTIONAL CASE STUDY.** Selene Payments Ltd, its infrastructure, employees, policies, documents, control checks, risk ratings and outcomes are synthetic. This repository is **not** an ISO certification, third-party audit, legal compliance opinion or evidence of professional employment.
 
@@ -23,6 +23,12 @@ The [Phase 3 dossier](phase3/README.md) contains **ten synthetic audit samples**
 In the made-up follow-up, scoped 7/7 privileged human MFA evidence allows a **provisional** change of ISMS-R01 from 20 Critical to **10 High**. Training attendance improves from 16/30 to 30/30, but without demonstrated learning, ISMS-R09 remains **9 Medium**. The other risks do not change, leaving **one Critical, seven High, two Medium**. **No finding is formally closed; no manager has approved risk treatment or the provisional SoA.**
 
 See the [audit sampling method](phase3/docs/09-internal-audit-method.md), [management review rehearsal](phase3/docs/10-management-review.md), [corrective-action/effectiveness analysis](phase3/docs/11-effectiveness-review.md) and [executive closeout](phase3/docs/12-executive-closeout.md). Original v0.1 and v0.2 source registers and their two workbooks are retained. This is **not a performed independent internal audit or an ISO certification assessment**.
+
+## Phase 4 — Integrated portfolio dashboard and QA review (v0.4)
+
+The [GitHub-native management dashboard](phase4/dashboard.md) combines all ten fictional risk scores, the 93-control provisional SoA, 24 selected ISO/IEC 27001 requirements checkpoints, ten simulated audit samples, nine open CAPAs, performance indicators, and **seven unsigned role-play proposals**. The [final quality review](phase4/docs/final-quality-review.md) documents corrected historical-management input references, data provenance, and limitations.
+
+**Latest fictional risk state: one Critical, seven High and two Medium.** The dashboard is not a compliance score or evidence of ISO certification. The v0.1 and v0.2 Excel workbooks remain historical snapshots; no dashboard numbers are represented as real business results.
 
 ## Version 0.1 baseline (retained unchanged)
 
@@ -54,6 +60,7 @@ The ISO reference list is complete by **control ID**, but only 23 controls were 
 7. [Phase 2 applicability decisions](phase2/docs/07-applicability-decisions.md)
 8. [Evidence plan and approval gates](phase2/docs/08-evidence-and-approval-plan.md)
 9. [Phase 3 audit and management review exercise](phase3/README.md)
+10. [Integrated management dashboard and final review](phase4/README.md)
 
 Source data are in [`data/`](data/), clearly marked synthetic artifacts in [`evidence/`](evidence/), templates in [`templates/`](templates/) and governance drafts in [`policies/`](policies/).
 
@@ -65,6 +72,7 @@ Requires Python 3.10 or later; **no external Python packages for validation**.
 python scripts/validate_project.py
 python scripts/validate_phase2.py
 python scripts/validate_phase3.py
+python scripts/validate_portfolio.py
 python scripts/validate_workbook.py
 python scripts/validate_manifest.py
 python -m unittest discover -s tests -v
@@ -88,4 +96,4 @@ The original risk workbook is **`ISMS_Gap_Assessment.xlsx`** (v0.1 baseline). Th
 - NIST CSF 2.0 Govern function (supplemental reference): https://www.nist.gov/cyberframework
 - ISO/IEC 27001 licensed standard is required for a real audit.
 
-**Development note:** v0.3 adds the fictional internal audit and management review exercise with evidence limits and no fabricated approvals. Next work is a final integrated quality review, including a decision dashboard and traceability audit. Keep private while developing.
+**Portfolio note:** v0.4 completes the integrated synthetic assessment and cross-phase consistency review. The mock company is **not certified**, the provisional SoA has no real authorization, and the 70 unverified controls are still unverified. Retain the repository as **private** until the owner personally reviews its contents and explicitly elects to publish.
