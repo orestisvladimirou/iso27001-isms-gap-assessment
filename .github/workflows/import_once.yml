@@ -45,6 +45,8 @@ jobs:
                   name = PurePosixPath(member.name)
                   assert member.isfile(), f"Unexpected archive entry: {member.name}"
                   assert not name.is_absolute() and ".." not in name.parts
+                  if member.name == ".github/workflows/validate.yml":
+                      continue  # Added separately with GitHub app workflow permissions
                   target = Path(*name.parts)
                   target.parent.mkdir(parents=True, exist_ok=True)
                   source = tar.extractfile(member)
@@ -56,10 +58,9 @@ jobs:
         run: python scripts/validate_project.py
       - name: Run all unit tests
         run: python -m unittest discover -s tests -v
-      - name: Remove temporary transfer files and one-time workflow
+      - name: Remove temporary transfer files
         run: |
           rm -rf bootstrap
-          rm .github/workflows/import_once.yml
       - name: Commit project files
         run: |
           git config user.name "github-actions[bot]"
