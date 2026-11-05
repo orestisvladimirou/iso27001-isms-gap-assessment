@@ -1,12 +1,12 @@
 {
   "project": "ISO27001-ISMS-Gap-Assessment",
-  "version": "0.2",
+  "version": "0.3",
   "purpose": "Fictional non-certification portfolio exercise",
   "files": [
     {
       "path": ".github/workflows/validate.yml",
-      "sha256": "002e1b4d40e4c4f8c4332040cbe95b2e21e9c8837465cc8c5c107f8379dfa5df",
-      "size": 721
+      "sha256": "ed6c2a2d6a7524e35a717ad163c4def0605a7f602e53bd6f3397c02a298c9e6c",
+      "size": 837
     },
     {
       "path": ".gitignore",
@@ -15,8 +15,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "cbd0b702c9f6a9918224a2655c78ba78cf6ee7aeba2d00906d70c80f4d32f024",
-      "size": 1464
+      "sha256": "011f0ff6d4b40d76f60a75c7993828ae8fe2537349592d4dd169fcbf34bd12e8",
+      "size": 2250
     },
     {
       "path": "ISMS_Gap_Assessment.xlsx",
@@ -25,8 +25,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "24c74e9142817fbdc02f043d3d065c668c9b3507c330739db74b805757afece2",
-      "size": 6261
+      "sha256": "c6470659edb2d5d7250878fc38ff429e3663b14fa81f2eaedb4f344c71432665",
+      "size": 7739
     },
     {
       "path": "data/asset_inventory.csv",
@@ -80,8 +80,8 @@
     },
     {
       "path": "docs/05-roadmap.md",
-      "sha256": "bf86bac1c3577358c2a420b85ce491946762a8a6642ae67220455cacf8b728e5",
-      "size": 3446
+      "sha256": "8b9cc4ebab3be0ac3e43b9eb2d0abd15874b3ff964d9c0089f1ad79ac68731ce",
+      "size": 3971
     },
     {
       "path": "docs/06-sources-and-limitations.md",
@@ -164,6 +164,91 @@
       "size": 3556
     },
     {
+      "path": "phase3/README.md",
+      "sha256": "da267d1292997f546c99a28c21c659d008c115e2356abc5378deefb877e10f82",
+      "size": 1437
+    },
+    {
+      "path": "phase3/data/audit_findings.csv",
+      "sha256": "2490648ee053bf3580f3950c5069f31a2f522b3e14897b9495a90df3405600cc",
+      "size": 2185
+    },
+    {
+      "path": "phase3/data/audit_plan.csv",
+      "sha256": "7caf902c6f06f14c365e3e24de64e08b0fcc483cc6fd08b461f0b2082559b54b",
+      "size": 630
+    },
+    {
+      "path": "phase3/data/audit_samples.csv",
+      "sha256": "b8e5b7facfbcc29bb79d7499105f31a856e926f0c359bf7099172a0b17fa88db",
+      "size": 1851
+    },
+    {
+      "path": "phase3/data/corrective_actions.csv",
+      "sha256": "f10d54800760f23f7374b3777ada939741dc4b185504cb5156ac58b52f0e5a2b",
+      "size": 2716
+    },
+    {
+      "path": "phase3/data/effectiveness_reviews.csv",
+      "sha256": "89ed462568ad5bf83e891e4be8be8a4303ffe101ca6ec0c23c624acb87807814",
+      "size": 611
+    },
+    {
+      "path": "phase3/data/follow_up_evidence.csv",
+      "sha256": "7279990985c6a6d437edc8fe183f10e456a011ef9d51baf143edc2fdf7be3faa",
+      "size": 652
+    },
+    {
+      "path": "phase3/data/kpi_snapshot.csv",
+      "sha256": "bc44851df47c89d905a462021dd03fb6bdf8743f070c4673e54f721a849486f4",
+      "size": 879
+    },
+    {
+      "path": "phase3/data/management_decisions.csv",
+      "sha256": "3d99b98472369281b10b49d9dd759df1cb73ae231ecf751f094ff60030ed3b77",
+      "size": 1653
+    },
+    {
+      "path": "phase3/data/management_review_inputs.csv",
+      "sha256": "c3411e4e941a0f24a7ef766e2509cce5737e4f075917f9f1ec162cef65f38ab3",
+      "size": 2112
+    },
+    {
+      "path": "phase3/data/risk_follow_up.csv",
+      "sha256": "66586ee04e1164e8baf4189ff1c9362c79d165afd2c248eeadb0d4958a7251be",
+      "size": 1295
+    },
+    {
+      "path": "phase3/docs/09-internal-audit-method.md",
+      "sha256": "40583b18a113853e78a8f25e65a65a2b9118811a83bf7e8fd88332e0b1a7b6ed",
+      "size": 3948
+    },
+    {
+      "path": "phase3/docs/10-management-review.md",
+      "sha256": "5b10db3eb295714639fd1b98a60a3fd606f3dc138d5cc0023363a026c221b795",
+      "size": 3760
+    },
+    {
+      "path": "phase3/docs/11-effectiveness-review.md",
+      "sha256": "73dea3ba0d6c6a26fb69c0d449ff8216670bbd06421ab0e395c255d036f735c0",
+      "size": 2639
+    },
+    {
+      "path": "phase3/docs/12-executive-closeout.md",
+      "sha256": "349ee4b52982952468951282db18d5173d9c656bdf85944382fb92517f56e94b",
+      "size": 2846
+    },
+    {
+      "path": "phase3/evidence/P3-E01-privileged-mfa-followup.md",
+      "sha256": "09b0cc2b12b9007aeb7e9324fbafe4b201e564aa70519aed69d4c636cdb39fb5",
+      "size": 1079
+    },
+    {
+      "path": "phase3/evidence/P3-E02-awareness-followup.md",
+      "sha256": "c488fa86c4aa7d364aaf2c798f208f6357723e90c633d212b1e3ce80a04f0767",
+      "size": 628
+    },
+    {
       "path": "policies/POL-001-information-security-policy-DRAFT.md",
       "sha256": "52665ee17391493ba068e42008bd67e7b3bd45adcf820e8512372f594b492909",
       "size": 2066
@@ -174,14 +259,24 @@
       "size": 1484
     },
     {
+      "path": "scripts/regenerate_manifest.py",
+      "sha256": "b01d752846ff26093a896b1ff6580c766b148694f008681a5be1bc48fd593227",
+      "size": 835
+    },
+    {
       "path": "scripts/validate_manifest.py",
-      "sha256": "c896f7d6567cc2c1be1b47414db26ee1b9ff7a14836a0af2b40953e23b6e755c",
+      "sha256": "10b295f64c9a71d28facd0b2ca7ec55a151fef0b01a4dbe8d9ad4d0dddacf152",
       "size": 1161
     },
     {
       "path": "scripts/validate_phase2.py",
       "sha256": "4bf2ba8555c10f644dd040fb86e9019aab8bd2d8f0cece58b08fd592eb240282",
       "size": 4153
+    },
+    {
+      "path": "scripts/validate_phase3.py",
+      "sha256": "5f9eb9e23063d779296bb849eef3125fdfef28755bab0555c5e2f5cbe1e4b2ad",
+      "size": 7860
     },
     {
       "path": "scripts/validate_project.py",
@@ -222,6 +317,11 @@
       "path": "tests/test_assessment.py",
       "sha256": "f65dcf185b717395a3c95f8edc14b89544163807955c1a5261bcd75c1a204c57",
       "size": 1565
+    },
+    {
+      "path": "tests/test_phase3.py",
+      "sha256": "6919b17ac8d130ea8a9f81a9a71af531ef63d1a85158cb5cf09479cb43fc8865",
+      "size": 1856
     },
     {
       "path": "tests/test_soa_phase2.py",
