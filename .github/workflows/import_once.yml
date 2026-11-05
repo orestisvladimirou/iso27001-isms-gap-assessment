@@ -1,0 +1,69 @@
+name: Import ISO 27001 project (one-time)
+
+on:
+  push:
+    paths:
+      - ".github/workflows/import_once.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout private repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Restore original project and verify archive
+        shell: bash
+        run: |
+          python - <<'PY'
+          import base64
+          import hashlib
+          import io
+          import lzma
+          import tarfile
+          from pathlib import Path, PurePosixPath
+
+          chunks = sorted(Path("bootstrap").glob("part*.txt"))
+          assert len(chunks) == 10, f"Expected 10 transfer segments, got {len(chunks)}"
+          encoded = "".join(p.read_text(encoding="ascii").strip() for p in chunks)
+          archive = base64.b85decode(encoded)
+          expected = "a94412ff5f93b843899eb380aa9c7aa568f487bba44a5244920596f3a4ab38ba"
+          assert hashlib.sha256(archive).hexdigest() == expected, "Archive integrity mismatch"
+          content = lzma.decompress(archive)
+          with tarfile.open(fileobj=io.BytesIO(content), mode="r:") as tar:
+              members = tar.getmembers()
+              assert len(members) == 36, f"Expected 36 files, got {len(members)}"
+              for member in members:
+                  name = PurePosixPath(member.name)
+                  assert member.isfile(), f"Unexpected archive entry: {member.name}"
+                  assert not name.is_absolute() and ".." not in name.parts
+                  target = Path(*name.parts)
+                  target.parent.mkdir(parents=True, exist_ok=True)
+                  source = tar.extractfile(member)
+                  assert source is not None
+                  target.write_bytes(source.read())
+          print("PASS: 36 original project files restored from checksum-verified archive.")
+          PY
+      - name: Check project data integrity
+        run: python scripts/validate_project.py
+      - name: Run all unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Remove temporary transfer files and one-time workflow
+        run: |
+          rm -rf bootstrap
+          rm .github/workflows/import_once.yml
+      - name: Commit project files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Import validated ISO 27001 ISMS gap assessment v0.1"
+          git push origin HEAD:main
