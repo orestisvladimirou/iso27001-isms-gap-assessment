@@ -1,0 +1,11 @@
+action_id,risk_id,priority,action_summary,owner,target_date,acceptance_test,status,related_control_ids
+ACT-01,ISMS-R01,P1,Enforce phishing-resistant MFA for all privileged human identities and approve access-review RACI,IT Security Manager,2026-12-05,Configuration export accounts for 7/7 admins and exception register; reviewed quarterly access matrix,Open,A.5.1;A.5.2;A.5.15;A.5.18;A.8.2
+ACT-02,ISMS-R02,P1,Complete asset ownership and classification for all in-scope data stores,Data Services Lead,2026-12-19,Owner-signed inventory maps 100% of identified cloud stores and classification,Open,A.5.9;A.5.12
+ACT-03,ISMS-R03,P1,Enforce critical vulnerability remediation SLA and exception approval,Engineering Lead,2026-12-05,No overdue critical items or formally time-bound and approved exceptions,Open,A.8.8
+ACT-04,ISMS-R04,P1,Onboard missing high-value log sources and exercise alerts,Security Operations Lead,2026-12-19,Nine of nine priority log feeds with sampled alert tests and defined review cadence,Open,A.8.15;A.8.16
+ACT-05,ISMS-R05,P1,Conduct complete payment API and database restore with recorded RTO/RPO,Business Continuity Lead,2026-12-19,Dated exercise meets business-defined objectives and includes failed-test follow-up,Open,A.5.30;A.8.13
+ACT-06,ISMS-R06,P1,Approve incident response roles and test escalation through tabletop exercise,Incident Response Lead,2026-12-12,Signed RACI and witnessed escalation scenario with action log,Open,A.5.24;A.6.8
+ACT-07,ISMS-R07,P2,Maintain endpoint encryption coverage; formalize remote-work safeguards,IT Operations,2027-01-05,Monthly attestation covers all devices and remote-work policy approved,Monitoring,A.6.7;A.8.24
+ACT-08,ISMS-R08,P1,Add mandatory security-review gate and verify environment separation,Engineering Lead,2026-12-26,"Sample deployments show review evidence, separation tests, exceptions",Open,A.8.28;A.8.31
+ACT-09,ISMS-R09,P2,Complete security awareness training and a phishing-reporting exercise,HR and Security,2027-01-05,30/30 staff tracked or documented justified exception; test event reported correctly,Open,A.6.3
+ACT-10,ISMS-R10,P1,Approve hardening baseline and inspect production cloud drift,Cloud Platform Lead,2026-12-12,Baseline applied to scoped resources and drift report reviewed,Open,A.5.23;A.8.9

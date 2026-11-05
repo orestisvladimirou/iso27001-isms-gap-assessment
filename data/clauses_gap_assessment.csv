@@ -1,0 +1,25 @@
+clause_ref,original_assessment_focus,gap_status,evidence_ids,action_id,gap_statement,assessment_note
+4.1,Organizational context,Partial,EV-001,ACT-01,Stakeholder/technology drivers listed but climate relevance and changes not evidenced,Selected clause checkpoints; not a conformity certification
+4.2,Interested-party requirements,Gap,,ACT-01,"Customer, regulators, staff and contractual requirements not approved or prioritized",Selected clause checkpoints; not a conformity certification
+4.3,ISMS boundaries,Partial,EV-003,ACT-02,Draft systems in scope; outsourced interfaces still unclear,Selected clause checkpoints; not a conformity certification
+4.4,ISMS operation and processes,Gap,,ACT-01,No operating governance calendar or documented process ownership,Selected clause checkpoints; not a conformity certification
+5.1,Leadership commitment,Gap,,ACT-01,"No management approval, mandate or resourcing evidence",Selected clause checkpoints; not a conformity certification
+5.2,Information security policy,Gap,EV-001,ACT-01,Draft policy awaits formal approval and communication,Selected clause checkpoints; not a conformity certification
+5.3,Roles and responsibilities,Partial,EV-001,ACT-01,RACI contains unassigned risk and audit approval responsibilities,Selected clause checkpoints; not a conformity certification
+6.1.1,Risk/action planning,Partial,EV-003,ACT-02,Context gathered but full ISMS risk planning incomplete,Selected clause checkpoints; not a conformity certification
+6.1.2,Risk assessment method,Partial,,ACT-01,5x5 model exists in this project but no organization approval or calibration,Selected clause checkpoints; not a conformity certification
+6.1.3,Risk treatment and SoA,Partial,,ACT-01,Treatment plan and provisional 93-reference SoA drafted; 70 controls pending review,Selected clause checkpoints; not a conformity certification
+6.2,Security objectives,Gap,,ACT-01,No management-approved measurable objectives or review owners,Selected clause checkpoints; not a conformity certification
+7.1,Resources,Not assessed,,,Resource sufficiency has not been validated,Selected clause checkpoints; not a conformity certification
+7.2,Competence,Partial,EV-009,ACT-09,Training completion incomplete; competence testing not done,Selected clause checkpoints; not a conformity certification
+7.3,Awareness,Partial,EV-009,ACT-09,Only 16/30 staff attendance observed in scenario,Selected clause checkpoints; not a conformity certification
+7.4,Communication,Gap,EV-011,ACT-06,Incident and security reporting channels not formalized,Selected clause checkpoints; not a conformity certification
+7.5,Documented information,Gap,EV-001,ACT-01,"Approval, revision, retention and access controls not documented",Selected clause checkpoints; not a conformity certification
+8.1,Operational planning and control,Gap,EV-004,ACT-03,Critical remediation plan not consistently enforced,Selected clause checkpoints; not a conformity certification
+8.2,Operating risk assessments,Gap,,ACT-01,Risk assessment cadence not established as operational process,Selected clause checkpoints; not a conformity certification
+8.3,Operating risk treatment,Gap,,ACT-01,Acceptance decisions and implementation checks unverified,Selected clause checkpoints; not a conformity certification
+9.1,Monitoring and measurement,Partial,EV-005,ACT-04,Source coverage measured but overall KPIs undefined,Selected clause checkpoints; not a conformity certification
+9.2,Internal audit,Gap,EV-012,ACT-01,No approved audit programme or independence plan,Selected clause checkpoints; not a conformity certification
+9.3,Management review,Gap,,ACT-01,No documented management review of ISMS effectiveness,Selected clause checkpoints; not a conformity certification
+10.1,Continual improvement,Gap,,ACT-01,No tracked management review improvement decisions,Selected clause checkpoints; not a conformity certification
+10.2,Nonconformity and corrective action,Gap,,ACT-01,No consistent root-cause and effectiveness-review process,Selected clause checkpoints; not a conformity certification

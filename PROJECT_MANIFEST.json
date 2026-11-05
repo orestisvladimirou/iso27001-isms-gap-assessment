@@ -1,0 +1,181 @@
+{
+  "project": "ISO27001-ISMS-Gap-Assessment",
+  "version": "0.1",
+  "files": [
+    {
+      "path": ".github/workflows/validate.yml",
+      "sha256": "dbb32dd8ca8ce9f0e5f12093f9c5408b39d58f465b1630b05e35413fc2169d0e",
+      "size": 418
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "b6b3e320b7cc1a402a62311d96bd412e23ca55b434333f3517241864b58f8cd0",
+      "size": 68
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "b4b2cbe27dd38737f9182ae6271327e99c7c3933adc000391ecb6100d2c9f2b4",
+      "size": 777
+    },
+    {
+      "path": "ISMS_Gap_Assessment.xlsx",
+      "sha256": "86a89c19caf3852a13aaff4bb68d6fc7628d0a571b0f1e8a50d7eb6ee75926c0",
+      "size": 22986
+    },
+    {
+      "path": "README.md",
+      "sha256": "d301949f526a97a78d82a3429a7a17086096c2d96f6a75a703c2ac5e12dbe4a8",
+      "size": 4928
+    },
+    {
+      "path": "data/asset_inventory.csv",
+      "sha256": "079087beee90e6d75fd81a44182ff904944216dd36f92f3a1dda6aabb389c8ed",
+      "size": 1526
+    },
+    {
+      "path": "data/clauses_gap_assessment.csv",
+      "sha256": "053e8f5cda789200b4d0a4856c0b57c070bc0acf1c56b62731a061b0d8287a42",
+      "size": 4069
+    },
+    {
+      "path": "data/evidence_register.csv",
+      "sha256": "cc8e78c48dae0c860de2798837ab0d2125cf9f6557f83570de3eb0937efde631",
+      "size": 2236
+    },
+    {
+      "path": "data/risk_register.csv",
+      "sha256": "59ebef5738abce82e01d1d97d394de73162802f7745c89f93addc31399ea7e49",
+      "size": 2936
+    },
+    {
+      "path": "data/statement_of_applicability.csv",
+      "sha256": "89068d0f479c5011398ec15b10c896e13a528b753d942508aaf813ae3f9cf3e8",
+      "size": 17353
+    },
+    {
+      "path": "data/treatment_plan.csv",
+      "sha256": "698a5f8b2bba638afc71253ae3c8f5b22fcd39548a721bd4601c9af69914f8ef",
+      "size": 2303
+    },
+    {
+      "path": "docs/01-organization-and-scope.md",
+      "sha256": "31542cb2dd9784ed2f4febdf7c5f6b8e1b8037c62adcbae2343c9e45aab65409",
+      "size": 4064
+    },
+    {
+      "path": "docs/02-assessment-method.md",
+      "sha256": "2a81b234c0bd68e609e3cc01e52dbcb7747807b1170d43f083fa505628153ce5",
+      "size": 3141
+    },
+    {
+      "path": "docs/03-gaps-and-soa.md",
+      "sha256": "207b3158919fdc623cc8a6d88d1528342d4dbb258c8dcc18f26bd6d20a9c3f01",
+      "size": 2902
+    },
+    {
+      "path": "docs/04-executive-report.md",
+      "sha256": "a9aac7307c8d6374c3acab9497fff69349c38affeca2bf6328f4e12b0284e61d",
+      "size": 3167
+    },
+    {
+      "path": "docs/05-roadmap.md",
+      "sha256": "48829d9bc04ea938a8449de5cebf57fa37dd7259e79b142e6cf397c163367796",
+      "size": 3014
+    },
+    {
+      "path": "docs/06-sources-and-limitations.md",
+      "sha256": "22f22f7d8787fc72e619af59ddd51026f6d7d83dea60ceccbb50c18eda64645a",
+      "size": 1925
+    },
+    {
+      "path": "evidence/EV-001-security-policy-draft.md",
+      "sha256": "32ccd341b652d6cd949867c7998494241a8b1b3a91e40c30663508f10ca44ae4",
+      "size": 548
+    },
+    {
+      "path": "evidence/EV-002-iam-admin-sample.md",
+      "sha256": "ee60736772ecc7dbc6e352d0b7d1bf77365397afac0871a60ec354853cb07872",
+      "size": 533
+    },
+    {
+      "path": "evidence/EV-003-asset-gaps.md",
+      "sha256": "764286eb8e657735910284fdc0d76bf78893d796828bcd0f099b2aba1dc57d6c",
+      "size": 469
+    },
+    {
+      "path": "evidence/EV-004-vulnerability-backlog.md",
+      "sha256": "4073ef85bf420a3d67d9c82edb14ea3a59f8cbdfceefc8ddec255199a47ac94a",
+      "size": 476
+    },
+    {
+      "path": "evidence/EV-005-logging-coverage.md",
+      "sha256": "4886f17389d11ba4e845f480cefb5ad5300524fa8e27a0fa35fe436224749e51",
+      "size": 430
+    },
+    {
+      "path": "evidence/EV-007-device-encryption.md",
+      "sha256": "f0026a5a06e73647d372da8356d035b74bc3ff6268e523b79e1eb91824420cfe",
+      "size": 632
+    },
+    {
+      "path": "evidence/EV-008-cicd-review.md",
+      "sha256": "f37895fc74535ff6c61b936014acaa65c1262df6fd5f43f587788439aa961ad4",
+      "size": 472
+    },
+    {
+      "path": "evidence/EV-009-awareness-attendance.md",
+      "sha256": "0dee69feaf4c19076efaf0115cac1283781d04190caf1e27ed7327ebe12c52cc",
+      "size": 385
+    },
+    {
+      "path": "evidence/EV-011-incident-plan.md",
+      "sha256": "75afeea16d6af6311c7296ecc67b081407dce831e4e5b379f81c1761fd36bfc8",
+      "size": 357
+    },
+    {
+      "path": "policies/POL-001-information-security-policy-DRAFT.md",
+      "sha256": "52665ee17391493ba068e42008bd67e7b3bd45adcf820e8512372f594b492909",
+      "size": 2066
+    },
+    {
+      "path": "policies/POL-002-access-control-policy-DRAFT.md",
+      "sha256": "99cecc71e0bba65fe89c2445e4c585a199e17fd9ffeae0e136e1531dd7ae9748",
+      "size": 1484
+    },
+    {
+      "path": "scripts/validate_project.py",
+      "sha256": "3daa833293e09ca1f1bc97cfe304cdb52791b1ee1198b9de626790c6870d493f",
+      "size": 5798
+    },
+    {
+      "path": "templates/corrective-action.md",
+      "sha256": "8fb476483328bfef37eb81032f2284f92eabe50f2167a84a29d71057a57818fc",
+      "size": 586
+    },
+    {
+      "path": "templates/internal-audit-plan.md",
+      "sha256": "f09d0da0685251160d3835404a1b0fc8d4b87c0a947ac28eaa9de7f0a82ab3ad",
+      "size": 1150
+    },
+    {
+      "path": "templates/management-review-minutes.md",
+      "sha256": "59c04df4e194b7a1a9a96474cfe8aae279abdfad47814dfca23283f296869d2b",
+      "size": 958
+    },
+    {
+      "path": "templates/policy-approval-record.md",
+      "sha256": "ec99aef7fecf6f1cb740d977d9ade5c7fcd8d24c4681ba7cb8d8a0b0c211efd8",
+      "size": 507
+    },
+    {
+      "path": "templates/risk-acceptance-form.md",
+      "sha256": "485abaa8a7948124aae4ba2cf857395bff5f0cc4433d99aa9b9ddc2fcf84247e",
+      "size": 694
+    },
+    {
+      "path": "tests/test_assessment.py",
+      "sha256": "f65dcf185b717395a3c95f8edc14b89544163807955c1a5261bcd75c1a204c57",
+      "size": 1565
+    }
+  ]
+}

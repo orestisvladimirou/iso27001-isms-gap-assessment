@@ -1,0 +1,94 @@
+control_id,theme,project_control_focus,applicability,assessment_status,evidence_ids,linked_risks,action_id,selection_or_pending_rationale,implementation_comment
+A.5.1,Organizational,Security policy governance,Applicable,Gap,EV-001,ISMS-R01,ACT-01,Risk-relevant to selected ISMS scope,Unapproved baseline policy; accountable executive sign-off needed
+A.5.2,Organizational,Security roles and ownership,Applicable,Partial,EV-001,ISMS-R01,ACT-01,Risk-relevant to selected ISMS scope,Roles documented but no approved authority matrix
+A.5.3,Organizational,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.5.4,Organizational,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.5.5,Organizational,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.5.6,Organizational,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.5.7,Organizational,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.5.8,Organizational,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.5.9,Organizational,Inventory of information and supporting assets,Applicable,Partial,EV-003,ISMS-R02,ACT-02,Risk-relevant to selected ISMS scope,Inventory incomplete; cloud data stores missing owners
+A.5.10,Organizational,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.5.11,Organizational,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.5.12,Organizational,Information classification approach,Applicable,Gap,,ISMS-R02,ACT-02,Risk-relevant to selected ISMS scope,No accepted classification and handling standard
+A.5.13,Organizational,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.5.14,Organizational,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.5.15,Organizational,Access-control governance,Applicable,Partial,EV-002,ISMS-R01,ACT-01,Risk-relevant to selected ISMS scope,Some identity policies exist; privileged coverage inconsistent
+A.5.16,Organizational,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.5.17,Organizational,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.5.18,Organizational,Authorization and access reviews,Applicable,Gap,EV-002,ISMS-R01,ACT-01,Risk-relevant to selected ISMS scope,Periodic access attestation not evidenced
+A.5.19,Organizational,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.5.20,Organizational,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.5.21,Organizational,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.5.22,Organizational,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.5.23,Organizational,Cloud-use safeguards,Applicable,Partial,EV-003,ISMS-R10,ACT-10,Risk-relevant to selected ISMS scope,Cloud ownership and configuration reviews incomplete
+A.5.24,Organizational,Incident response preparedness,Applicable,Gap,EV-011,ISMS-R06,ACT-06,Risk-relevant to selected ISMS scope,Generic document with no ownership or exercised playbooks
+A.5.25,Organizational,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.5.26,Organizational,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.5.27,Organizational,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.5.28,Organizational,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.5.29,Organizational,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.5.30,Organizational,ICT continuity readiness,Applicable,Gap,EV-006,ISMS-R05,ACT-05,Risk-relevant to selected ISMS scope,No tested recovery for critical data processing
+A.5.31,Organizational,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.5.32,Organizational,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.5.33,Organizational,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.5.34,Organizational,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.5.35,Organizational,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.5.36,Organizational,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.5.37,Organizational,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.6.1,People,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.6.2,People,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.6.3,People,Security education and awareness,Applicable,Partial,EV-009,ISMS-R09,ACT-09,Risk-relevant to selected ISMS scope,16/30 staff completed annual fictional training
+A.6.4,People,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.6.5,People,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.6.6,People,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.6.7,People,Remote working safeguards,Applicable,Gap,,ISMS-R07,ACT-07,Risk-relevant to selected ISMS scope,Remote working requirements not formally approved
+A.6.8,People,Security event escalation by personnel,Applicable,Gap,EV-011,ISMS-R06,ACT-06,Risk-relevant to selected ISMS scope,No tested simple route for staff security event reporting
+A.7.1,Physical,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.7.2,Physical,Controlled physical access,Undetermined,Not assessed,EV-010,,,Physical-control scope review still pending,Shared office entry assurance not yet reviewed
+A.7.3,Physical,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.7.4,Physical,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.7.5,Physical,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.7.6,Physical,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.7.7,Physical,Workstation and document protection,Undetermined,Not assessed,,,,Physical-control scope review still pending,Site walkthrough and desk policy review pending
+A.7.8,Physical,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.7.9,Physical,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.7.10,Physical,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.7.11,Physical,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.7.12,Physical,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.7.13,Physical,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.7.14,Physical,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.8.1,Technological,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.8.2,Technological,Privileged access restrictions,Applicable,Gap,EV-002,ISMS-R01,ACT-01,Risk-relevant to selected ISMS scope,3/7 invented privileged identities lack enforced MFA
+A.8.3,Technological,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.8.4,Technological,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.8.5,Technological,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.8.6,Technological,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.8.7,Technological,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.8.8,Technological,Technical vulnerability remediation,Applicable,Gap,EV-004,ISMS-R03,ACT-03,Risk-relevant to selected ISMS scope,Six critical fictional findings beyond internal service target
+A.8.9,Technological,Secure configuration baselines,Applicable,Partial,EV-003,ISMS-R10,ACT-10,Risk-relevant to selected ISMS scope,Config baseline not consistently applied to cloud estate
+A.8.10,Technological,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.8.11,Technological,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.8.12,Technological,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.8.13,Technological,Data backup and recoverability,Applicable,Gap,EV-006,ISMS-R05,ACT-05,Risk-relevant to selected ISMS scope,Backup assertions lack a completed restore report
+A.8.14,Technological,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.8.15,Technological,Security-relevant logging,Applicable,Partial,EV-005,ISMS-R04,ACT-04,Risk-relevant to selected ISMS scope,Five of nine event sources included in central logs
+A.8.16,Technological,Security monitoring activities,Applicable,Partial,EV-005,ISMS-R04,ACT-04,Risk-relevant to selected ISMS scope,Monitoring use cases incomplete for cloud admin events
+A.8.17,Technological,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.8.18,Technological,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.8.19,Technological,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.8.20,Technological,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.8.21,Technological,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.8.22,Technological,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.8.23,Technological,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.8.24,Technological,Cryptographic safeguards,Applicable,Partial,EV-007,ISMS-R07,ACT-07,Risk-relevant to selected ISMS scope,Endpoint encryption sampled; broader key and data flows not assessed
+A.8.25,Technological,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.8.26,Technological,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.8.27,Technological,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.8.28,Technological,Secure development practices,Applicable,Partial,EV-008,ISMS-R08,ACT-08,Risk-relevant to selected ISMS scope,Dependency scan enabled; no systematic human review approval
+A.8.29,Technological,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.8.30,Technological,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.8.31,Technological,Development environment separation,Applicable,Gap,EV-008,ISMS-R08,ACT-08,Risk-relevant to selected ISMS scope,Test data and deployment boundaries not formally verified
+A.8.32,Technological,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.8.33,Technological,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable
+A.8.34,Technological,Annex A control reference — review pending,Undetermined,Not assessed,,,,Assessment not yet performed; not an exclusion,Do not count as compliant or not applicable

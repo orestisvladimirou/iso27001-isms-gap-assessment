@@ -1,0 +1,11 @@
+asset_id,asset_name,asset_type,service_owner,information_classification,location,criticality,system_dependencies,inventory_status
+PAYAPI,Payment-processing API,Application,Head of Engineering,Restricted,EU cloud region (fictional),Critical,CUSTDB;CLOUD;CI,Documented
+CUSTDB,Customer records database,Database,Data Services Lead,Restricted,EU cloud region (fictional),Critical,CLOUD;BACKUP,Ownership under review
+IAM,Identity provider and admin directory,Identity,Head of IT,Restricted,Cloud identity service (fictional),Critical,CLOUD,Documented
+CLOUD,Cloud tenant and virtual network,Infrastructure,Cloud Platform Lead,Internal,EU cloud regions (fictional),Critical,IAM;SIEM,Configuration incomplete
+LAPTOP,Fifteen managed employee laptops,Endpoint,IT Operations,Confidential,Distributed remote work,High,IAM;MDM,Demonstrated within scenario
+MDM,Device-management policy service,Platform,IT Operations,Internal,EU cloud region (fictional),High,IAM,Documented
+SIEM,Central security log collection,Security,Security Operations Lead,Confidential,EU cloud region (fictional),High,CLOUD;IAM;PAYAPI,Partially connected
+BACKUP,Backup and restoration service,Resilience,Business Continuity Lead,Restricted,EU backup region (fictional),Critical,CUSTDB;CLOUD,Restoration unverified
+CI,Build and release pipelines,Development,Engineering Lead,Internal,Hosted CI (fictional),High,PAYAPI;IAM,Partially reviewed
+PERSONNEL,Employee training and policy records,Human,HR Manager,Confidential,Internal systems,Medium,IAM,Documented

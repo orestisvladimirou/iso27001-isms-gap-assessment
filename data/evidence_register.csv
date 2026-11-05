@@ -1,0 +1,13 @@
+evidence_id,subject,evidence_class,fictional_source,observation_date,file,assurance_level,limitation
+EV-001,Security policy and RACI,Synthetic draft,Fictional GRC workspace,2026-11-05,evidence/EV-001-security-policy-draft.md,Low,No executive approval or effective date
+EV-002,Privileged account coverage,Synthetic scope-limited control extract,Fictional IAM report,2026-11-05,evidence/EV-002-iam-admin-sample.md,Low,Three of seven admins have no enforced MFA; no access review
+EV-003,Asset management snapshot,Synthetic incomplete asset extract,Fictional CMDB,2026-11-05,evidence/EV-003-asset-gaps.md,Low,Unknown cloud stores and no classification signoff
+EV-004,Vulnerability backlog,Synthetic scan summary,Fictional vulnerability platform,2026-11-05,evidence/EV-004-vulnerability-backlog.md,Low,Six overdue critical items; no verified closure
+EV-005,Logging coverage,Synthetic log-source inventory,Fictional SIEM,2026-11-05,evidence/EV-005-logging-coverage.md,Low,Four of nine prioritized feeds missing
+EV-006,Restoration assurance,Missing exercise report,Fictional BCP team,2026-11-05,,Missing,Scheduled test is not a completed demonstration
+EV-007,Endpoint encryption verification,Synthetic scoped technical sample,Fictional MDM check,2026-11-05,evidence/EV-007-device-encryption.md,Medium-in-simulation,15 of 15 known laptops checked; no assurance beyond modeled population
+EV-008,Development pipeline controls,Synthetic configuration summary,Fictional CI platform,2026-11-05,evidence/EV-008-cicd-review.md,Low,Dependency scan exists but approvals and environment separation untested
+EV-009,Security training,Synthetic training attendance record,Fictional HR,2026-11-05,evidence/EV-009-awareness-attendance.md,Low,16 of 30 staff attended; effectiveness unverified
+EV-010,Office physical access,Unverified claim,Fictional facilities team,2026-11-05,,Unverified,Leased office control evidence not supplied
+EV-011,Security incident plan,Synthetic outdated draft,Fictional security workspace,2026-11-05,evidence/EV-011-incident-plan.md,Low,No owner approval or exercise evidence
+EV-012,Internal audit records,Missing audit program,Fictional GRC workspace,2026-11-05,,Missing,No audit schedule or completed internal audits
