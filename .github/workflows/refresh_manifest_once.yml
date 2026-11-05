@@ -1,4 +1,4 @@
-name: Finalize v0.3 manifest (one-time)
+name: Finalize v0.3 manifest after regression fix (one-time)
 
 on:
   push:
