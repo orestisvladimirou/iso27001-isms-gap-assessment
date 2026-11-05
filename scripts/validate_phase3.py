@@ -1,95 +1,139 @@
 #!/usr/bin/env python3
-"""Validate a MOCK internal audit and a DRAFT management review in the fictional ISMS."""
+"""Check linked fictional audit, corrective action, evidence and management records."""
 import csv
 from collections import Counter
 from datetime import date
 from pathlib import Path
-
-from validate_phase2 import ROOT, p2_load, validate_phase2
 from validate_project import load
+from validate_phase2 import ROOT, p2_load, validate_phase2
 
 P3 = ROOT / "phase3" / "data"
 
 def p3_load(name):
-    with (P3 / name).open(newline="", encoding="utf-8") as file:
-        return list(csv.DictReader(file))
+    with (P3 / name).open(encoding="utf-8", newline="") as stream:
+        return list(csv.DictReader(stream))
 
-def unique(rows, key):
-    keys = [r[key] for r in rows]
-    assert len(set(keys)) == len(keys), "Duplicate " + key
+def by_id(rows, key):
+    ids = [r[key] for r in rows]
+    assert len(ids) == len(set(ids)), "Repeated " + key
     return {r[key]: r for r in rows}
 
-def validate_phase3():
-    validate_phase2()  # Phase 1 and 2 remain the source of earlier conclusions
-    risks = unique(load("risk_register.csv"), "risk_id")
-    actions = unique(load("treatment_plan.csv"), "action_id")
-    evidence = unique(load("evidence_register.csv"), "evidence_id")
-    soa = unique(p2_load("soa_applicability_review.csv"), "control_id")
-    samples = unique(p3_load("mock_audit_samples.csv"), "sample_id")
-    findings = unique(p3_load("mock_audit_findings.csv"), "finding_id")
-    capas = unique(p3_load("corrective_actions.csv"), "capa_id")
-    inputs = unique(p3_load("management_review_inputs.csv"), "input_id")
-    proposals = unique(p3_load("management_review_proposals.csv"), "proposal_id")
+def band(score):
+    return "Low" if score <= 4 else "Medium" if score <= 9 else "High" if score <= 16 else "Critical"
 
-    assert len(samples) == 9 and len(findings) == len(capas) == 8
-    assert len(inputs) == 8 and len(proposals) == 6
-    assert Counter(s["sample_result"] for s in samples.values()) == {
-        "Gap": 6, "Partial": 2, "Limited positive observation": 1
+def validate_phase3():
+    validate_phase2()
+    original = by_id(load("risk_register.csv"), "risk_id")
+    treatment = by_id(load("treatment_plan.csv"), "action_id")
+    evidence = by_id(load("evidence_register.csv"), "evidence_id")
+    soa = by_id(p2_load("soa_applicability_review.csv"), "control_id")
+    audit = by_id(p3_load("audit_plan.csv"), "audit_id")
+    samples = by_id(p3_load("audit_samples.csv"), "sample_id")
+    findings = by_id(p3_load("audit_findings.csv"), "finding_id")
+    actions = by_id(p3_load("corrective_actions.csv"), "capa_id")
+    follow_evidence = by_id(p3_load("follow_up_evidence.csv"), "evidence_id")
+    reviews = by_id(p3_load("effectiveness_reviews.csv"), "review_id")
+    risks = by_id(p3_load("risk_follow_up.csv"), "risk_id")
+    kpis = by_id(p3_load("kpi_snapshot.csv"), "kpi_id")
+    proposals = by_id(p3_load("management_decisions.csv"), "decision_id")
+    inputs = by_id(p3_load("management_review_inputs.csv"), "input_id")
+
+    assert len(audit) == 1 and len(samples) == 10
+    assert len(findings) == len(actions) == 9
+    assert len(follow_evidence) == len(reviews) == 2
+    assert len(risks) == len(original) == 10
+    assert len(kpis) == 6 and len(proposals) == 7 and len(inputs) == 8
+    assert list(audit.values())[0]["audit_status"] == "SIMULATED DESK REHEARSAL"
+    assert Counter(x["result"] for x in samples.values()) == {
+        "INDICATIVE FINDING": 9, "SCOPED POSITIVE OBSERVATION": 1
     }
-    assert Counter(f["severity"] for f in findings.values()) == {
-        "Major - simulated": 5, "Minor - simulated": 3
+    assert Counter(x["indicative_severity"] for x in findings.values()) == {
+        "Major-style": 6, "Minor-style": 3
     }
-    assert len({f["sample_id"] for f in findings.values()}) == 8
-    assert {f["sample_id"] for f in findings.values()} == {
-        s["sample_id"] for s in samples.values()
-        if s["sample_result"] != "Limited positive observation"
-    }
-    assert len([s for s in samples.values() if s["sample_result"] == "Limited positive observation"]) == 1
+    assert {x["finding_id"] for x in samples.values() if x["finding_id"]} == set(findings)
 
     for s in samples.values():
-        assert s["soa_control_id"] in soa
-        assert s["risk_id"] in risks
-        assert s["review_method"] and s["limitations"] and s["independence_note"]
-        if s["baseline_evidence_id"]:
-            assert s["baseline_evidence_id"] in evidence
-        assert "Fictional" in s["independence_note"]
+        assert s["audit_id"] in audit
+        assert s["sampling_scope"] and s["evidence_observation"]
+        if s["source_ref"].startswith("EV-"):
+            assert s["source_ref"] in evidence
+        elif s["source_ref"] != "MISSING":
+            assert (ROOT / s["source_ref"]).is_file(), "Missing sampled source"
+        if s["result"] == "SCOPED POSITIVE OBSERVATION":
+            assert not s["finding_id"]
+        else:
+            assert s["finding_id"] in findings
     for f in findings.values():
-        sample = samples[f["sample_id"]]
-        assert sample["sample_result"] in ("Gap", "Partial")
-        assert f["criterion"] == sample["criterion"]
-        assert f["soa_control_id"] == sample["soa_control_id"]
-        assert f["linked_risk_id"] == sample["risk_id"]
-        assert f["evidence_id"] == sample["baseline_evidence_id"]
-        assert f["finding_type"] == "Nonconformity - mock"
-        assert f["status"] == "OPEN"
-        assert f["finding_statement"] and f["verification_limitation"]
+        assert f["sample_id"] in samples
+        assert f["finding_id"] == samples[f["sample_id"]]["finding_id"]
+        assert f["criterion"] == samples[f["sample_id"]]["criterion"]
+        assert f["baseline_evidence_ref"] == samples[f["sample_id"]]["source_ref"]
+        assert f["baseline_action_id"] in treatment
+        if f["related_risk"]:
+            assert f["related_risk"] in original
+            assert treatment[f["baseline_action_id"]]["risk_id"] == f["related_risk"]
+        assert f["root_cause_hypothesis"] and f["status"] != "CLOSED"
+        assert "REHEARSAL" in f["status"] or "FOLLOW-UP OPEN" in f["status"]
+    assert {c["finding_id"] for c in actions.values()} == set(findings)
+    for a in actions.values():
+        assert a["owner_role"] and a["effectiveness_test"] and a["root_cause_correction"]
+        assert a["followup_state"] not in ("CLOSED", "VERIFIED_CLOSED")
+        assert a["closure_authority"] and date.fromisoformat(a["due_date"]) >= date(2026, 11, 19)
 
-    assert {c["finding_id"] for c in capas.values()} == set(findings)
-    for c in capas.values():
-        f = findings[c["finding_id"]]
-        assert c["linked_treatment_id"] in actions
-        assert actions[c["linked_treatment_id"]]["risk_id"] == f["linked_risk_id"]
-        assert len(c["root_cause_hypothesis"]) >= 20
-        assert all(c[k] for k in ("immediate_containment","systemic_corrective_action",
-                                  "evidence_for_closure","owner"))
-        assert c["status"] == "OPEN" and c["approval_status"] == "NOT_APPROVED"
-        assert date.fromisoformat(c["target_date"]) >= date(2026, 12, 8)
-        assert date.fromisoformat(c["independent_follow_up_date"]) > date.fromisoformat(c["target_date"])
+    for e in follow_evidence.values():
+        assert e["finding_id"] in findings
+        assert (ROOT / e["source_file"]).is_file()
+        assert date.fromisoformat(e["scenario_date"]) >= date(2026, 11, 19)
+        assert e["confidence"] and e["remaining_limit"]
+    for r in reviews.values():
+        assert r["finding_id"] in findings
+        assert r["capa_id"] in actions and actions[r["capa_id"]]["finding_id"] == r["finding_id"]
+        assert r["new_evidence_id"] in follow_evidence
+        assert follow_evidence[r["new_evidence_id"]]["finding_id"] == r["finding_id"]
+        assert r["independent_signoff"] == "NOT OBTAINED"
+        assert r["finding_disposition"].startswith("OPEN")
+        assert date.fromisoformat(r["review_date"]) >= date.fromisoformat(
+            follow_evidence[r["new_evidence_id"]]["scenario_date"])
 
-    for x in inputs.values():
-        assert x["status"] == "DRAFT_FOR_FICTIONAL_REVIEW"
-        assert x["management_question"] and x["scenario_observation"]
-        assert (ROOT / x["source_reference"]).is_file(), "Missing input source"
-    for p in proposals.values():
-        assert p["input_id"] in inputs
-        assert p["status"] == "PROPOSED_ONLY" and p["authorization"] == "NONE"
-        assert p["responsible_role"] and p["proposed_management_direction"]
-        assert date.fromisoformat(p["requested_date"]) >= date(2026, 12, 8)
-        related = p["related_capa_ids"].split(";")
-        assert related and all(x in capas for x in related)
-    assert all(r["decision_review_status"].startswith("Awaiting") for r in soa.values())
-    print("PASS Phase 3: 9 synthetic samples, 8 OPEN mock findings, 8 unapproved CAPAs, "
-          "8 review inputs and 6 unapproved proposals; no evidence or approval invented.")
+    changed = []
+    for r in risks.values():
+        old = original[r["risk_id"]]
+        for part in ("likelihood", "impact", "score"):
+            assert int(r["baseline_" + part]) == int(old["residual_" + part])
+        l, i = int(r["followup_likelihood"]), int(r["followup_impact"])
+        score = int(r["followup_score"])
+        assert 1 <= l <= 5 and 1 <= i <= 5
+        assert score == l * i and r["followup_band"] == band(score)
+        assert r["approval_status"] == "NOT APPROVED - SIMULATED"
+        new_ids = [x for x in r["new_evidence_ids"].split(";") if x]
+        assert all(x in follow_evidence for x in new_ids)
+        if score < int(r["baseline_score"]):
+            assert new_ids and r["risk_id"] == "ISMS-R01", "Unexpected unverified reduction"
+            changed.append(r["risk_id"])
+    assert changed == ["ISMS-R01"]
+    assert int(risks["ISMS-R01"]["followup_score"]) == 10
+    assert int(risks["ISMS-R09"]["followup_score"]) == int(risks["ISMS-R09"]["baseline_score"])
+
+    for k in kpis.values():
+        assert k["interpretation"]
+        assert int(k["denominator"]) > 0
+        assert 0 <= int(k["baseline_numerator"]) <= int(k["denominator"])
+        assert 0 <= int(k["followup_numerator"]) <= int(k["denominator"])
+        for source in k["source_evidence"].split(";"):
+            assert source in evidence or source in follow_evidence
+    for m in proposals.values():
+        assert m["decision_status"] == "ROLE-PLAY PROPOSAL" and m["no_real_approval"] == "Yes"
+        assert m["simulated_direction"] and m["owner_role"]
+        assert date.fromisoformat(m["followup_due"]) >= date.fromisoformat(m["scenario_meeting_date"])
+    for record in inputs.values():
+        assert record["status"] == "DRAFT_FOR_FICTIONAL_REVIEW"
+        assert record["management_question"]
+        assert (ROOT / record["source_reference"]).is_file()
+
+    assert len(soa) == 93
+    assert all(s["decision_review_status"].startswith("Awaiting") for s in soa.values())
+    print("PASS Phase 3: 10 synthetic samples, 9 OPEN indicative findings, 9 unresolved CAPAs, "
+          "2 qualified follow-up reviews, 10 checked risk scores, 7 unapproved role-play proposals.")
     return True
 
 if __name__ == "__main__":
