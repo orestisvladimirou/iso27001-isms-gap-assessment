@@ -1,0 +1,15 @@
+metric_id,indicator,baseline,followup,unit_or_denominator,interpretation,source_files
+K01,Critical residual risks,2,1,out of 10,Critical-risk count decreases but cloud misconfiguration remains Critical,data/risk_register.csv;phase3/data/risk_follow_up.csv
+K02,High residual risks,6,7,out of 10,One originally Critical risk moves to High; not an overall conformity claim,data/risk_register.csv;phase3/data/risk_follow_up.csv
+K03,Medium residual risks,2,2,out of 10,No change to the two Medium risks,data/risk_register.csv;phase3/data/risk_follow_up.csv
+K04,Annex A control references reviewed,n/a,93,control IDs,Provisional necessity review is complete; implementation assurance is not,phase2/data/soa_applicability_review.csv
+K05,Provisional necessary controls,n/a,91,of 93 references,All selection decisions require owner validation,phase2/data/soa_applicability_review.csv
+K06,Necessary controls not verified,n/a,70,control IDs,Unverified is neither implemented nor compliant,phase2/data/soa_applicability_review.csv
+K07,Proposed exclusions awaiting validation,n/a,2,control IDs,A.7.6 and A.8.30 must not be treated as approved exclusions,phase2/data/soa_applicability_review.csv
+K08,Indicative audit findings,n/a,9,of 10 selected samples,Six Major-style and three Minor-style teaching classifications,phase3/data/audit_findings.csv
+K09,Corrective actions awaiting closure,n/a,9,of 9 CAPAs,No independent effectiveness signoff recorded,phase3/data/corrective_actions.csv
+K10,Unsigned management proposals,n/a,7,role-play entries,Zero real management authorizations,phase3/data/management_decisions.csv
+K11,Privileged human MFA coverage,4,7,out of 7,Fictional scoped technical control improvement; formal closure remains open,phase3/data/kpi_snapshot.csv
+K12,Security training attendance,16,30,out of 30,Attendance alone does not prove learned behavior,phase3/data/kpi_snapshot.csv
+K13,Priority logging source coverage,5,5,out of 9,Four modeled log-source classes still missing,phase3/data/kpi_snapshot.csv
+K14,Selected ISMS clause checkpoints,n/a,24,checkpoints,"Initial requirements assessment covers 24 selected topics, not a certification audit",data/clauses_gap_assessment.csv

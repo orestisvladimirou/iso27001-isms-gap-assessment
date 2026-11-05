@@ -1,0 +1,11 @@
+risk_id,asset_id,risk_owner,baseline_likelihood,baseline_impact,baseline_residual_score,baseline_band,followup_likelihood,followup_impact,followup_residual_score,followup_band,score_change,new_evidence_ids,risk_approval_status
+ISMS-R01,IAM,IT Security Manager,4,5,20,Critical,2,5,10,High,-10,P3-E01,NOT APPROVED - SIMULATED
+ISMS-R02,CUSTDB,Data Services Lead,4,4,16,High,4,4,16,High,0,,NOT APPROVED - SIMULATED
+ISMS-R03,PAYAPI,Engineering Lead,4,4,16,High,4,4,16,High,0,,NOT APPROVED - SIMULATED
+ISMS-R04,SIEM,Security Operations Lead,3,4,12,High,3,4,12,High,0,,NOT APPROVED - SIMULATED
+ISMS-R05,BACKUP,Business Continuity Lead,3,5,15,High,3,5,15,High,0,,NOT APPROVED - SIMULATED
+ISMS-R06,PAYAPI,Incident Response Lead,3,4,12,High,3,4,12,High,0,,NOT APPROVED - SIMULATED
+ISMS-R07,LAPTOP,IT Operations,2,3,6,Medium,2,3,6,Medium,0,,NOT APPROVED - SIMULATED
+ISMS-R08,CI,Engineering Lead,4,4,16,High,4,4,16,High,0,,NOT APPROVED - SIMULATED
+ISMS-R09,PERSONNEL,HR and Security,3,3,9,Medium,3,3,9,Medium,0,P3-E02,NOT APPROVED - SIMULATED
+ISMS-R10,CLOUD,Cloud Platform Lead,4,5,20,Critical,4,5,20,Critical,0,,NOT APPROVED - SIMULATED
